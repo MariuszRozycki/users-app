@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import './Users.css';
+import UsersList from './UsersList';
 
 class Users extends Component {
 
@@ -10,11 +11,9 @@ class Users extends Component {
           <h1>User's List</h1>
           <form>
             <input type="text" placeholder="Enter name"/>
+            <button type="submit">Add user</button>
           </form>
-          <ul>
-            <li>Hans</li>
-            <li>Mariusz</li>
-          </ul>
+          <UsersList />
         </div>
       );
     }
